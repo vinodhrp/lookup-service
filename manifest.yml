@@ -3,5 +3,5 @@ applications:
   instances: 1
   memory: 512m
   path: target/lookup-service-0.0.1-SNAPSHOT.jar
-  #domain: cf-ws.io
+  ##domain: cf-ws.io
   services:  - LOOKUP
