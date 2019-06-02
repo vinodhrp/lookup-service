@@ -33,17 +33,19 @@ import com.spring.cloud.lookup.util.ApiCustomMessage;
 @RestController
 @RequestMapping("lookup-type-service")
 public class LookupTypeController {
-	
+
 	@Autowired
 	private LookupTypeService lookupTypeService;
+
 	
-	@RequestMapping(method=RequestMethod.POST, value="/savelookuptype")
-	public ResponseEntity<?> saveLookupType(@RequestBody LookupType lookupType){
-		if(lookupType == null) {
-			return new ResponseEntity<ApiCustomMessage>(new ApiCustomMessage(),HttpStatus.CONFLICT);
+
+	@RequestMapping(method = RequestMethod.POST, value = "/save")
+	public ResponseEntity<?> saveLookupType(@RequestBody LookupType lookupType) {
+		if (lookupType == null) {
+			return new ResponseEntity<ApiCustomMessage>(new ApiCustomMessage(), HttpStatus.CONFLICT);
 		}
-		
-		return new ResponseEntity<LookupType>(lookupTypeService.saveLookupType(lookupType),HttpStatus.ACCEPTED);
+
+		return new ResponseEntity<LookupType>(lookupTypeService.saveLookupType(lookupType), HttpStatus.ACCEPTED);
 	}
 
 }
