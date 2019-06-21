@@ -34,4 +34,38 @@ public class IncomeType {
 	@Column(name = "income_desc",nullable=false)
 	private String incomeDesc;
 
+	public Long getIncomeId() {
+		return incomeId;
+	}
+
+	public void setIncomeId(Long incomeId) {
+		this.incomeId = incomeId;
+	}
+
+	public Long getLookupId() {
+		return lookupId;
+	}
+
+	public void setLookupId(Long lookupId) {
+		this.lookupId = lookupId;
+	}
+
+	public String getIncomeCode() {
+		return incomeCode;
+	}
+
+	public void setIncomeCode(String incomeCode) {
+		this.incomeCode = incomeCode;
+	}
+
+	public String getIncomeDesc() {
+		return incomeDesc;
+	}
+
+	public void setIncomeDesc(String incomeDesc) {
+		this.incomeDesc = incomeDesc;
+	}
+	
+	
+
 }

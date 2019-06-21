@@ -28,4 +28,22 @@ public class LookupType {
 	@Column(name = "lookup_desc",nullable=false)
 	private String typeDesc;
 
+	public Long getLookupId() {
+		return lookupId;
+	}
+
+	public void setLookupId(Long lookupId) {
+		this.lookupId = lookupId;
+	}
+
+	public String getTypeDesc() {
+		return typeDesc;
+	}
+
+	public void setTypeDesc(String typeDesc) {
+		this.typeDesc = typeDesc;
+	}
+	
+	
+
 }

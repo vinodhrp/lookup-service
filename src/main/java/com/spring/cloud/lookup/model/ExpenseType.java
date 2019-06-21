@@ -32,6 +32,40 @@ public class ExpenseType {
 	
 	@Column(name = "xp_desc",nullable=false)
 	private String xpDesc;
+
+	public Long getXpId() {
+		return xpId;
+	}
+
+	public void setXpId(Long xpId) {
+		this.xpId = xpId;
+	}
+
+	public Long getLookupId() {
+		return lookupId;
+	}
+
+	public void setLookupId(Long lookupId) {
+		this.lookupId = lookupId;
+	}
+
+	public String getXpCode() {
+		return xpCode;
+	}
+
+	public void setXpCode(String xpCode) {
+		this.xpCode = xpCode;
+	}
+
+	public String getXpDesc() {
+		return xpDesc;
+	}
+
+	public void setXpDesc(String xpDesc) {
+		this.xpDesc = xpDesc;
+	}
+	
+	
 	
 	
 
